@@ -288,4 +288,10 @@ const cardData = [
 .kpi-card__corner:hover {
   opacity: 0.7;
 }
+
+@media (max-width: 768px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+}
 </style>

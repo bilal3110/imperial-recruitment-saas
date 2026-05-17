@@ -188,15 +188,14 @@ function rejectRecruit() {
   white-space: nowrap;
 }
 
-.table-wrapper {
-  overflow-x: hidden;
+  .table-wrapper {
+  overflow-x: auto;
 }
 
-.recruit-table {
+  .recruit-table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  min-width: 680px;
 }
 
 .recruit-table tbody tr {
@@ -328,5 +327,49 @@ button.reject {
 button:hover {
   transform: translateY(-1px);
   box-shadow: 0 10px 20px rgba(15, 11, 5, 0.12);
+}
+
+@media (max-width: 768px) {
+  .recruit-grid {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 680px) {
+  .recruit-table thead {
+    display: none;
+  }
+
+  .recruit-table,
+  .recruit-table tbody,
+  .recruit-table tr,
+  .recruit-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .recruit-table tr {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(26, 18, 8, 0.06);
+    border-radius: 8px;
+    background: rgba(247, 240, 220, 0.9);
+  }
+
+  .recruit-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 8px;
+    border: none;
+  }
+
+  .recruit-table td:first-child {
+    font-weight: 700;
+    font-size: 15px;
+  }
 }
 </style>

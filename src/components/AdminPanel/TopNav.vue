@@ -85,7 +85,7 @@ const onBlur = () => setTimeout(() => (dropOpen.value = false), 150)
 
   position: fixed;
   top: 0;
-  left: 240px; 
+  left: var(--sidebar-width, 240px);
   right: 0;
   height: 68px;
   background: var(--ink-deep);

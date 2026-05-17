@@ -366,7 +366,7 @@ function loyaltyBarColor(v){ return v >= 70 ? "var(--success)" : v >= 40 ? "var(
   font-size: 14px;
   color: var(--ink-deep);
   outline: none;
-  min-width: 130px;
+  min-width: 0;
   transition: border-color 0.2s, background 0.2s;
 }
 .filter-group select:focus,
@@ -448,7 +448,6 @@ function loyaltyBarColor(v){ return v >= 70 ? "var(--success)" : v >= 40 ? "var(
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
-  min-width: 500px;
 }
 .recruit-table th {
   padding: 11px 12px;
@@ -646,5 +645,55 @@ button.approve:hover,
 button.reject:hover {
   opacity: 0.85;
   transform: translateY(-1px);
+}
+
+@media (max-width: 680px) {
+  .filter-bar {
+    gap: 8px;
+  }
+
+  .filter-group {
+    flex: 1 1 45%;
+    min-width: 0;
+  }
+
+  .recruit-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .recruit-table thead {
+    display: none;
+  }
+
+  .recruit-table,
+  .recruit-table tbody,
+  .recruit-table tr,
+  .recruit-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .recruit-table tr {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid rgba(26, 18, 8, 0.06);
+    border-radius: 8px;
+    background: rgba(247, 240, 220, 0.95);
+  }
+
+  .recruit-table td {
+    display: flex;
+    justify-content: space-between;
+    padding: 6px 8px;
+    border: none;
+  }
+
+  .recruit-table td:first-child {
+    font-weight: 700;
+    font-size: 15px;
+  }
 }
 </style>

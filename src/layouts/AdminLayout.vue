@@ -24,7 +24,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="admin-layout">
+  <div :class="[{ 'sidebar-hidden': !sidebarVisible }, 'admin-layout']">
     <Sidebar :class="[{ 'sidebar--active': sidebarVisible }, 'sidebar']" />
     <div
       v-if="sidebarVisible"
@@ -44,13 +44,18 @@ onUnmounted(() => {
 
 <style scoped>
 .admin-layout {
+  --sidebar-width: 240px;
   display: flex;
   min-height: 100vh;
   overflow: hidden;
 }
 
+.admin-layout.sidebar-hidden {
+  --sidebar-width: 0px;
+}
+
 .sidebar {
-  width: 240px;
+  width: var(--sidebar-width);
   flex-shrink: 0;
 }
 
@@ -62,12 +67,13 @@ onUnmounted(() => {
   flex: 1;
   display: flex;
   flex-direction: column;
-  margin-left: 240px;
+  margin-left: var(--sidebar-width);
 }
 
 .topnav {
   height: 68px;
   flex-shrink: 0;
+  left: var(--sidebar-width);
 }
 
 .content {
