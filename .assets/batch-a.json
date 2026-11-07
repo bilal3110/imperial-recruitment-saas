@@ -1,0 +1,34 @@
+{
+  "requests": [
+    {
+      "output_file": "court-hero.png",
+      "aspect_ratio": "21:9",
+      "resolution": "2K",
+      "prompt": "Cinematic oil painting, 16th century Ottoman palace courtyard at golden hour. In the centre-right of the frame, an Ottoman sultan in a rich crimson kaftan with gold embroidery and a large white turban practices swordsmanship with a curved scimtar, mid-strike, the blade catching warm light. Long flowing cloak caught by the wind. In the background, rows of janissary soldiers in tall white felt caps train with muskets and round shields, slightly out of focus. Massive carved walnut arcade with pointed Turkish arches, marble inlay courtyard floor, warm braziers with drifting dust motes, deep shadows. Palette: deep burgundy, dark walnut brown, antique gold, aged parchment. Museum-quality historical oil painting, dramatic chiaroscuro lighting, rich texture, painterly brushwork. No text, no lettering, no watermark, no signature."
+    },
+    {
+      "output_file": "palace-gate.png",
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "prompt": "Front-on view of a pair of colossal Ottoman palace gate doors, dark carved walnut wood with rows of hammered brass studs, ornate gilt bronze bosses, geometric Islamic star-and-polygon carved panels, thick stone arch frame, iron hinges and a great ring handle on each leaf. Warm low light rakes across the wood grain from the left, a sliver of golden light at the meeting line of the two doors. Slight atmospheric haze. Photorealistic cinematic render, moody chiaroscuro, deep shadow, rich texture of wood and metal, ultra detailed. No text, no lettering, no watermark, no signature."
+    },
+    {
+      "output_file": "palace-court.png",
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "prompt": "Interior of a grand Ottoman imperial palace court: soaring pointed arches of veined marble and carved stone, a central fountain, leaded glass windows casting patterned light, columns of warm ochre and cream stone, deep shaded arcades, a few silhouetted figures in period dress small in the frame for scale. Golden late-afternoon light, dust suspended in the air. Cinematic architectural photography, wide angle, rich warm palette of walnut, sandstone, burgundy and gold. No text, no lettering, no watermark, no signature."
+    },
+    {
+      "output_file": "history-hero.png",
+      "aspect_ratio": "21:9",
+      "resolution": "2K",
+      "prompt": "Epic Ottoman miniature painting style scene: an Ottoman imperial fleet of hundreds of oared galleys with red and gold striped sails advancing across a deep teal sea toward a distant walled city on the horizon, an ornate harbour full of ships, gulls in the sky, gilded clouds. Flattened perspective, decorative flat colour fields of lapis blue, vermilion, gold leaf and cream, fine ink outlines, intricate wave patterns, aged parchment texture showing through, slight craquelure and foxing. Museum-quality Ottoman manuscript illumination aesthetic. No text, no lettering, no calligraphy, no watermark, no signature."
+    },
+    {
+      "output_file": "janissary-formation.png",
+      "aspect_ratio": "16:9",
+      "resolution": "2K",
+      "prompt": "Ottoman janissary troops in disciplined formation on a dusty parade ground at dawn, wearing their distinctive tall white felt janissary caps with long fabric lappets hanging down the back, dark blue and black quilted kaftans, one hand on the stock of a long musket, the other holding a round shield. Serene disciplined expression, mist and low golden sun, banners of plain colour. Photorealistic cinematic historical illustration, warm dusty gold light, deep shadows, muted palette of walnut, cream, dark blue and antique gold. No text, no lettering, no watermark, no signature."
+    }
+  ]
+}

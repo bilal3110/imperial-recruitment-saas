@@ -1,10 +1,12 @@
 <script setup>
-    // import { Link } from '@inertiajs/vue3';
+import ImperialNav from "@/components/Imperial/ImperialNav.vue";
+import ImperialFooter from "@/components/Imperial/ImperialFooter.vue";
 </script>
 <template>
-    <div class="website-layout">
-        <main class="website-content">
-            <slot />
-        </main>
-    </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="imperial-shell">
+    <ImperialNav />
+    <main id="main"><slot /></main>
+    <ImperialFooter />
+  </div>
 </template>
